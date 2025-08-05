@@ -263,18 +263,17 @@
                 <div class="work__container bd-grid">
                     <div class="work__item" data-aos="fade-down">
                         <h3 class="project__title">Edge Aware V2X Safety Systems: Enhancing Road Intelligence Through Cloud, Sensors, and Real-Time Communication</h3>
-                          <p class="project__description">
-                            My work at TiHAN, IIT Hyderabad, in collaboration with CDAC (which provided hardware and DSRC-based communication modules for On-Board Units and Roadside Units), focused on independently building edge-aware V2X safety applications to enhance road intelligence through real-time communication, cloud processing, and sensor fusion. Key use cases I developed include Emergency Vehicle Warning, Stationary Vehicle Alert, Do Not Pass Warning, and Cooperative Merging Assistance. I created a real-time safety alert app featuring a Bluetooth (RN4020) connected interactive GUI for faster driver notifications than internet-based systems. Additionally, I implemented pedestrian detection using stereo/IP cameras combined with deep learning algorithms processed on the cloud, broadcasting VRU alerts to nearby vehicles. My work also involved developing a Grafana dashboard for vehicle tracking, displaying real-time speed, GPS location, gyroscope, and accelerometer data, leveraging advanced sensor integration to improve autonomous driving safety and situational awareness.
-                          </p>
-                          <div class="project__tags">
-                            <span class="tag">V2X</span>
-                            <span class="tag">DSRC</span>
-                            <span class="tag">Bluetooth</span>
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Cloud Computing</span>
-                            <span class="tag">Sensor Fusion</span>
-                            <span class="tag">Grafana</span>
-                          </div>
+                          <div class="project__description">
+                              <p id="description-short">
+                                My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection.
+                              </p>
+                            
+                              <p id="description-full" style="display:none;">
+                                My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection. This included developing emergency vehicle warning, stationary vehicle warnings, cooperative merging assistance, pedestrian detection using deep learning, and vehicle tracking dashboards using Grafana for real-time data visualization.
+                              </p>
+                            
+                              <button id="readMoreBtn" onclick="toggleReadMore()">Read more</button>
+                            </div>
                     </div>
                 </div>
             </section>
@@ -376,6 +375,7 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
 
 
 
