@@ -258,25 +258,62 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-            
-                <div class="work__container bd-grid">
+                  <h2 class="section-title">Work</h2>
+                
+                  <div class="work__container bd-grid">
                     <div class="work__item" data-aos="fade-down">
-                        <h3 class="project__title">Edge Aware V2X Safety Systems: Enhancing Road Intelligence Through Cloud, Sensors, and Real-Time Communication</h3>
-                          <div class="project__description">
-                              <p id="description-short">
-                                My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection.
-                              </p>
-                            
-                              <p id="description-full" style="display:none;">
-                                My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection. This included developing emergency vehicle warning, stationary vehicle warnings, cooperative merging assistance, pedestrian detection using deep learning, and vehicle tracking dashboards using Grafana for real-time data visualization.
-                              </p>
-                            
-                              <button id="readMoreBtn" onclick="toggleReadMore()">Read more</button>
-                            </div>
+                      <h3 class="project__title">
+                        Edge Aware V2X Safety Systems: Enhancing Road Intelligence Through Cloud, Sensors, and Real-Time Communication
+                      </h3>
+                      <div class="project__description">
+                        <p id="description-short">
+                          My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection.
+                        </p>
+                
+                        <p id="description-full" style="display:none;">
+                          My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection. This included developing emergency vehicle warning, stationary vehicle warnings, cooperative merging assistance, pedestrian detection using deep learning, and vehicle tracking dashboards using Grafana for real-time data visualization.
+                        </p>
+                
+                        <button id="readMoreBtn" onclick="toggleReadMore()">Read more</button>
+                      </div>
                     </div>
-                </div>
-            </section>
+                  </div>
+                </section>
+                
+                <script>
+                  function toggleReadMore() {
+                    const shortPara = document.getElementById("description-short");
+                    const fullPara = document.getElementById("description-full");
+                    const btn = document.getElementById("readMoreBtn");
+                
+                    if (fullPara.style.display === "none") {
+                      fullPara.style.display = "block";
+                      shortPara.style.display = "none";
+                      btn.textContent = "Read less";
+                    } else {
+                      fullPara.style.display = "none";
+                      shortPara.style.display = "block";
+                      btn.textContent = "Read more";
+                    }
+                  }
+                </script>
+                
+                <style>
+                  .project__description p {
+                    margin: 0 0 10px 0;
+                  }
+                
+                  #readMoreBtn {
+                    background-color: transparent;
+                    border: none;
+                    color: #007BFF;
+                    cursor: pointer;
+                    font-weight: 600;
+                    padding: 0;
+                    font-size: 1rem;
+                  }
+                </style>
+
 
             <!--===== PUBLICATIONS =====-->
             <section class="work section" id="publications">
@@ -375,6 +412,7 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
 
 
 
