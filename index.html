@@ -257,114 +257,121 @@
             </section>
 
             <!--===== WORK =====-->
-            <section class="work section" id="work">
-                  <h2 class="section-title">Work</h2>
-                
-                  <div class="work__container bd-grid">
-                    <div class="work__item" data-aos="fade-down">
-                      <h3 class="project__title">
-                        Edge Aware V2X Safety Systems: Enhancing Road Intelligence Through Cloud, Sensors, and Real-Time Communication
-                      </h3>
-                
-                      <div class="project__tags" style="margin-bottom: 15px;">
-                        <span class="tag">Python</span>
-                        <span class="tag">Sensors</span>
-                        <span class="tag">Socket Programming</span>
-                        <span class="tag">802.11p Radio Module</span>
-                        <span class="tag">OpenCV</span>
-                        <span class="tag">Linux</span>
-                      </div>
-                
-                      <div class="project__description">
-                        <p id="description-short">
-                          My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection.
-                        </p>
-                
-                        <p id="description-full" style="display:none;">
-                          My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection. This included developing emergency vehicle warning, stationary vehicle warnings, cooperative merging assistance, pedestrian detection using deep learning, and vehicle tracking dashboards using Grafana for real-time data visualization.
-                        </p>
-                
-                        <button id="readMoreBtn" onclick="toggleReadMore()">Read more</button>
-                      </div>
-                    </div>
-                      <div class="work__item" data-aos="fade-down">
-                          <h3 class="project__title">
-                            Multi-Sensor Fusion for Vehicle Detection and Speed Tracking using Camera and RADAR (Suzuki Motor Corporation)
-                          </h3>
-                    
-                          <div class="project__tags" style="margin-bottom: 15px;">
-                            <span class="tag">Python</span>
-                            <span class="tag">Radar</span>
-                            <span class="tag">Camera</span>
-                            <span class="tag">Fusion</span>
-                            <span class="tag">RetinaNet</span>
-                            <span class="tag">Deep Learning</span>
-                          </div>
-                    
-                          <div class="project__description">
-                            <p class="desc-short">
-                              I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking. The project aimed to enhance single-stage detection accuracy using advanced fusion techniques.
-                            </p>
-                    
-                            <p class="desc-full" style="display: none;">
-                              I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking at Suzuki Motor Corporation. The architecture was based on a RetinaNet backbone, where we experimented by increasing network width, depth, and introducing skip connections. Based on comparative study of multiple deep learning models, we proposed a fusion framework that improved object detection, feature extraction, and sensor fusion. This system aimed to ensure high reliability in distance estimation and real-time vehicle behavior monitoring using combined camera and RADAR inputs.
-                            </p>
-                    
-                            <button class="readMoreBtn" onclick="toggleReadMore(this)">Read more</button>
-                          </div>
-                        </div>
-                  </div>
-                </section>
-                
-                <style>
-                  .project__tags {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                  }
-                
-                  .tag {
-                    background-color: #007BFF;
-                    color: white;
-                    border-radius: 9999px; /* oval shape */
-                    padding: 5px 15px;
-                    font-size: 0.9rem;
-                    font-weight: 600;
-                    user-select: none;
-                  }
-                
-                  .project__description p {
-                    margin: 0 0 10px 0;
-                  }
-                
-                  #readMoreBtn {
-                    background-color: transparent;
-                    border: none;
-                    color: #007BFF;
-                    cursor: pointer;
-                    font-weight: 600;
-                    padding: 0;
-                    font-size: 1rem;
-                  }
-                </style>
-                
-                <script>
-                  function toggleReadMore() {
-                    const shortPara = document.getElementById("description-short");
-                    const fullPara = document.getElementById("description-full");
-                    const btn = document.getElementById("readMoreBtn");
-                
-                    if (fullPara.style.display === "none") {
-                      fullPara.style.display = "block";
-                      shortPara.style.display = "none";
-                      btn.textContent = "Read less";
-                    } else {
-                      fullPara.style.display = "none";
-                      shortPara.style.display = "block";
-                      btn.textContent = "Read more";
-                    }
-                  }
-                </script>
+<section class="work section" id="work">
+  <h2 class="section-title">Work</h2>
+
+  <div class="work__container bd-grid">
+
+    <!-- Project 1: V2X Safety System -->
+    <div class="work__item" data-aos="fade-down">
+      <h3 class="project__title">
+        Edge Aware V2X Safety Systems: Enhancing Road Intelligence Through Cloud, Sensors, and Real-Time Communication
+      </h3>
+
+      <div class="project__tags" style="margin-bottom: 15px;">
+        <span class="tag">Python</span>
+        <span class="tag">Sensors</span>
+        <span class="tag">Socket Programming</span>
+        <span class="tag">802.11p Radio Module</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">Linux</span>
+      </div>
+
+      <div class="project__description">
+        <p class="desc-short">
+          My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection.
+        </p>
+
+        <p class="desc-full" style="display: none;">
+          My work involved building applications for Edge-Aware V2X Safety Systems at TiHAN IITH in collaboration with CDAC. The project used DSRC communication modules, On Board Units with GPRS, 802.11p radio, WiFi, GPS, Bluetooth, accelerometer, and gyroscope, Road Side Units, and stereo vision cameras to enhance real-time vehicular safety and pedestrian detection. This included developing emergency vehicle warning, stationary vehicle warnings, cooperative merging assistance, pedestrian detection using deep learning, and vehicle tracking dashboards using Grafana for real-time data visualization.
+        </p>
+
+        <button class="readMoreBtn" onclick="toggleReadMore(this)">Read more</button>
+      </div>
+    </div>
+
+    <!-- Project 2: Camera + RADAR Fusion -->
+    <div class="work__item" data-aos="fade-down">
+      <h3 class="project__title">
+        Multi-Sensor Fusion for Vehicle Detection and Speed Tracking using Camera and RADAR (Suzuki Motor Corporation)
+      </h3>
+
+      <div class="project__tags" style="margin-bottom: 15px;">
+        <span class="tag">Python</span>
+        <span class="tag">Radar</span>
+        <span class="tag">Camera</span>
+        <span class="tag">Fusion</span>
+        <span class="tag">RetinaNet</span>
+        <span class="tag">Deep Learning</span>
+      </div>
+
+      <div class="project__description">
+        <p class="desc-short">
+          I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking. The project aimed to enhance single-stage detection accuracy using advanced fusion techniques.
+        </p>
+
+        <p class="desc-full" style="display: none;">
+          I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking at Suzuki Motor Corporation. The architecture was based on a RetinaNet backbone, where we experimented by increasing network width, depth, and introducing skip connections. Based on comparative study of multiple deep learning models, we proposed a fusion framework that improved object detection, feature extraction, and sensor fusion. This system aimed to ensure high reliability in distance estimation and real-time vehicle behavior monitoring using combined camera and RADAR inputs.
+        </p>
+
+        <button class="readMoreBtn" onclick="toggleReadMore(this)">Read more</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Shared Styles -->
+<style>
+  .project__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tag {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 9999px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    user-select: none;
+  }
+
+  .project__description p {
+    margin: 0 0 10px 0;
+  }
+
+  .readMoreBtn {
+    background-color: transparent;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    font-size: 1rem;
+  }
+</style>
+
+<!-- Toggle Script -->
+<script>
+  function toggleReadMore(button) {
+    const container = button.closest(".project__description");
+    const shortPara = container.querySelector(".desc-short");
+    const fullPara = container.querySelector(".desc-full");
+
+    if (fullPara.style.display === "none") {
+      fullPara.style.display = "block";
+      shortPara.style.display = "none";
+      button.textContent = "Read less";
+    } else {
+      fullPara.style.display = "none";
+      shortPara.style.display = "block";
+      button.textContent = "Read more";
+    }
+  }
+</script>
 
             <!--===== PUBLICATIONS =====-->
             <section class="work section" id="publications">
@@ -463,6 +470,7 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
 
 
 
