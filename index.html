@@ -293,7 +293,7 @@
     <!-- Project 2: Camera + RADAR Fusion -->
     <div class="work__item" data-aos="fade-down">
       <h3 class="project__title">
-        Multi-Sensor Fusion for Vehicle Detection and Speed Tracking using Camera and RADAR (Suzuki Motor Corporation)
+        Multi-Sensor Fusion for Vehicle Detection and Speed Tracking using Camera and RADAR (in collaboration with Suzuki Motor Corporation)
       </h3>
 
       <div class="project__tags" style="margin-bottom: 15px;">
@@ -307,13 +307,53 @@
 
       <div class="project__description">
         <p class="desc-short">
-          I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking. The project aimed to enhance single-stage detection accuracy using advanced fusion techniques.
+          I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking as a part of my MTech thesis in IITH-TiHAN. The project aimed to enhance single-stage detection accuracy using advanced fusion techniques.
         </p>
 
         <p class="desc-full" style="display: none;">
           I worked on developing a modified camera and radar fusion algorithm for vehicle detection and speed tracking at Suzuki Motor Corporation. The architecture was based on a RetinaNet backbone, where we experimented by increasing network width, depth, and introducing skip connections. Based on comparative study of multiple deep learning models, we proposed a fusion framework that improved object detection, feature extraction, and sensor fusion. This system aimed to ensure high reliability in distance estimation and real-time vehicle behavior monitoring using combined camera and RADAR inputs.
         </p>
 
+        <button class="readMoreBtn" onclick="toggleReadMore(this)">Read more</button>
+      </div>
+    </div>
+    <!-- Project: IITH TiHAN – Autonomous Driving Applications (Suzuki Phase) -->
+    <div class="work__item" data-aos="fade-down">
+      <h3 class="project__title">
+        IITH TiHAN – Autonomous Driving Applications (Suzuki Phase)
+      </h3>
+    
+      <div class="project__tags" style="margin-bottom: 15px;">
+        <span class="tag">Autonomous Driving</span>
+        <span class="tag">VSLAM</span>
+        <span class="tag">Stereo Vision</span>
+        <span class="tag">Radar-Camera Fusion</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">NVIDIA Orin</span>
+        <span class="tag">Human Factors</span>
+      </div>
+    
+      <div class="project__description">
+        <p class="desc-short">
+          Continued the IITH TiHAN project at Suzuki, focusing on transferring research into deployable autonomous driving modules for real-world testing.
+        </p>
+    
+        <p class="desc-full" style="display: none;">
+          Building upon my previous academic work at IITH TiHAN, I worked on replicating and implementing developed algorithms on Suzuki’s in-house autonomous driving (AD) platform. My contributions included:
+          <ul>
+            <li>Implementing <b>VSLAM with stereo vision</b> for precise localization.</li>
+            <li>Developing <b>waypoint navigation</b> for autonomous path following.</li>
+            <li>Integrating <b>pothole and speed bump detection</b> algorithms on the NVIDIA Orin board.</li>
+            <li>Conducting a <b>human factors experiment</b> at the IITH testbed:
+              <ul>
+                <li>Invited volunteers from diverse age groups to drive in scenarios involving speed bumps and potholes.</li>
+                <li>Collected and analyzed data on <b>reaction time</b> and <b>stopping distance</b> variations.</li>
+              </ul>
+            </li>
+          </ul>
+          This phase bridged research insights from the academic environment with robust real-world deployment, enhancing both technical capabilities and practical applicability of autonomous driving systems.
+        </p>
+    
         <button class="readMoreBtn" onclick="toggleReadMore(this)">Read more</button>
       </div>
     </div>
@@ -470,6 +510,7 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
 
 
 
